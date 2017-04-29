@@ -1,0 +1,55 @@
+== Tressette
+Un programma per giocare a tressette in 4 al computer.
+
+== Installazione
+Scompattare lo zip del programma in una directory qualsiasi e lanciare il programma tre.exe.
+Se si usa il file.msi, lanciare il programma di installazione e seguire le istruzioni a visdeo.
+
+
+== Sviluppare il programma
+
+== Prerequisiti di sistema
+Per compilare il gioco del tressette ho utilizzato Visual Studio 8 service pack 1,
+con il sistema operativo win 7. L'installazione di Python non è 
+necessaria, ma la raccomando per usare appieno le possibilità di scripting. Ho 
+usato la versione 2.3. L'installazione di SDL non è necessaria in quanto essa è fornita in una 
+sotto directory del progetto.
+
+== Struttura delle directories
+\<tre7_root>
+          \include   == gli includes di sdl e header globali
+          \doc       == documenti e manuali
+          \lib       == lib di sdl
+          \out       == la dir dove viene generato il programma
+          \src       == sorgenti del programma, tools e test utilities
+             \src\MySearchAlpha      == sorgenti del tools MySearchAlpha
+             \src\NetCommon          == files per la gestione del gioco in rete
+             \src\TestEngine         == applicazione MFC per testare le classi TreCore
+	         \src\TreClientVs6       == il programma tressette
+             \src\TreCore            == classi core che non contengono elemnti HMI
+             
+== Compilazione 
+Il progetto del tressette si trova nella sotto directory 
+<tre7_root>/src/TreClientVs6/. Una volta aperto in Visual Studio
+TreClientVs6.sln, basta premere il pulsante build e il programma genera Tre.exe
+nella directory <tre7_root>\out
+
+== Risorse
+In <tre7_root>\out sono presenti i files di risorsa in modo da consentire un semplice deployment.
+Le risorse sono localizzate usando un path relativo partendo dalla directory dove si 
+trova tre.exe.
+
+== Distribuzione
+Tressette senza setup: basta zippare la directory out. L'installazione del 
+programma avviene semplicemente scompattando l'archivio in una directory qualsiasi. 
+
+== Url di riferimento
+www.invido.it
+www.libsdl.org
+www.python.org
+
+== Autore
+Igor Sarzi Sartori
+www.invido.it
+Donazione: http://sourceforge.net/donate/index.php?group_id=155065
+Data: 07.01.2012

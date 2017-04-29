@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "TreClientVs6", "TreClientVs6.vcxproj", "{0807F7C4-9160-4EA6-BCAD-E7DFCEBF21B1}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "GfxWidtget3", "..\GfxWidtget3\GfxWidtget3.vcxproj", "{CE3F06F4-018E-4044-856F-87A9FA79CA39}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0807F7C4-9160-4EA6-BCAD-E7DFCEBF21B1}.Debug|Win32.ActiveCfg = Debug|Win32
+		{0807F7C4-9160-4EA6-BCAD-E7DFCEBF21B1}.Debug|Win32.Build.0 = Debug|Win32
+		{0807F7C4-9160-4EA6-BCAD-E7DFCEBF21B1}.Release|Win32.ActiveCfg = Release|Win32
+		{0807F7C4-9160-4EA6-BCAD-E7DFCEBF21B1}.Release|Win32.Build.0 = Release|Win32
+		{CE3F06F4-018E-4044-856F-87A9FA79CA39}.Debug|Win32.ActiveCfg = Debug|Win32
+		{CE3F06F4-018E-4044-856F-87A9FA79CA39}.Debug|Win32.Build.0 = Debug|Win32
+		{CE3F06F4-018E-4044-856F-87A9FA79CA39}.Release|Win32.ActiveCfg = Release|Win32
+		{CE3F06F4-018E-4044-856F-87A9FA79CA39}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

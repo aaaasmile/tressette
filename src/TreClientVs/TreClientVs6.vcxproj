@@ -1,0 +1,267 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{0807F7C4-9160-4EA6-BCAD-E7DFCEBF21B1}</ProjectGuid>
+    <RootNamespace>TreClientVs6</RootNamespace>
+    <ProjectName>TreClientVs</ProjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <PlatformToolset>v140</PlatformToolset>
+    <UseOfMfc>false</UseOfMfc>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="$(VCTargetsPath)Microsoft.CPP.UpgradeFromVC60.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>14.0.25420.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <OutDir>.\Release\</OutDir>
+    <IntDir>.\Release\</IntDir>
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <OutDir>.\Debug\</OutDir>
+    <IntDir>.\Debug\</IntDir>
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Release/TreClientVs6.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <InlineFunctionExpansion>OnlyExplicitInline</InlineFunctionExpansion>
+      <AdditionalIncludeDirectories>.\include;..;.;../TreCore;./console;../include;../../include;../MySearchAlpha;../gfx_widgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;NOPYTHON;INTEL_APPUP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <StringPooling>true</StringPooling>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderOutputFile>.\Release/TreClientVs6.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Release/</AssemblerListingLocation>
+      <ObjectFileName>.\Release/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Release/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c07</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;sdl.lib;SDLmain.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;libexpat.lib;GfxWidtget3.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../out/tre.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>.\lib;..\..\lib;..\..\out;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Release/tre.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Release/TreClientVs6.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Midl>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MkTypLibCompatible>true</MkTypLibCompatible>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <TargetEnvironment>Win32</TargetEnvironment>
+      <TypeLibraryName>.\Debug/TreClientVs6.tlb</TypeLibraryName>
+      <HeaderFileName />
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>.\include;..;.;../TreCore;./console;../include;../../include;../MySearchAlpha;../gfx_widgets;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;NOPYTHON;INTEL_APPUP;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>StdAfx.h</PrecompiledHeaderFile>
+      <PrecompiledHeaderOutputFile>.\Debug/TreClientVs6.pch</PrecompiledHeaderOutputFile>
+      <AssemblerListingLocation>.\Debug/</AssemblerListingLocation>
+      <ObjectFileName>.\Debug/</ObjectFileName>
+      <ProgramDataBaseFileName>.\Debug/</ProgramDataBaseFileName>
+      <BrowseInformation>true</BrowseInformation>
+      <WarningLevel>Level3</WarningLevel>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+    </ClCompile>
+    <ResourceCompile>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <Culture>0x0c07</Culture>
+    </ResourceCompile>
+    <Link>
+      <AdditionalDependencies>odbc32.lib;odbccp32.lib;sdl2.lib;SDL2main.lib;SDL_image.lib;SDL_mixer.lib;SDL_ttf.lib;libexpat.lib;GfxWidtget3_d.lib;legacy_stdio_definitions.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <OutputFile>../../out/tre_d.exe</OutputFile>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <AdditionalLibraryDirectories>.\lib;..\..\lib;..\..\python_2_3\lib; ..\..\out;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ProgramDatabaseFile>.\Debug/tre_d.pdb</ProgramDatabaseFile>
+      <SubSystem>Windows</SubSystem>
+      <RandomizedBaseAddress>false</RandomizedBaseAddress>
+      <DataExecutionPrevention />
+      <TargetMachine>MachineX86</TargetMachine>
+      <ImageHasSafeExceptionHandlers>false</ImageHasSafeExceptionHandlers>
+    </Link>
+    <Bscmake>
+      <SuppressStartupBanner>true</SuppressStartupBanner>
+      <OutputFile>.\Debug/TreClientVs6.bsc</OutputFile>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GfxWidtget3\GfxWidtget3.vcxproj">
+      <Project>{ce3f06f4-018e-4044-856f-87a9fa79ca39}</Project>
+      <CopyLocalSatelliteAssemblies>true</CopyLocalSatelliteAssemblies>
+      <ReferenceOutputAssembly>true</ReferenceOutputAssembly>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\MySearchAlpha\cAlgABSolver.cpp" />
+    <ClCompile Include="..\MySearchAlpha\cCardItem.cpp" />
+    <ClCompile Include="..\MySearchAlpha\cHand.cpp" />
+    <ClCompile Include="..\MySearchAlpha\cStateAB.cpp" />
+    <ClCompile Include="..\MySearchAlpha\TrickHistory.cpp" />
+    <ClCompile Include="..\TreCore\AlgSupport.cpp" />
+    <ClCompile Include="..\TreCore\cAlgDefault.cpp" />
+    <ClCompile Include="..\TreCore\cAlgNetClientPlayer.cpp" />
+    <ClCompile Include="..\TreCore\cAlgPlugin.cpp" />
+    <ClCompile Include="..\TreCore\cAlgPythonPlayer.cpp" />
+    <ClCompile Include="..\TreCore\CardSpec.cpp" />
+    <ClCompile Include="..\TreCore\cCoreEngine.cpp" />
+    <ClCompile Include="..\TreCore\cGiocata.cpp" />
+    <ClCompile Include="..\TreCore\cMano.cpp" />
+    <ClCompile Include="..\TreCore\cMatchPoints.cpp" />
+    <ClCompile Include="..\TreCore\cMazzo.cpp" />
+    <ClCompile Include="..\TreCore\cPartita.cpp" />
+    <ClCompile Include="..\TreCore\cPlayer.cpp" />
+    <ClCompile Include="..\TreCore\cPlayersOnTable.cpp" />
+    <ClCompile Include="..\TreCore\cPlayerStatistic.cpp" />
+    <ClCompile Include="..\TreCore\cProbality.cpp" />
+    <ClCompile Include="..\TreCore\PythonExport.cpp" />
+    <ClCompile Include="..\TreCore\TraceService.cpp" />
+    <ClCompile Include="cCardGfx.cpp" />
+    <ClCompile Include="cDelayNextAction.cpp" />
+    <ClCompile Include="cGameMainGfx.cpp" />
+    <ClCompile Include="cHightScoreMgr.cpp" />
+    <ClCompile Include="cMenuMgr.cpp" />
+    <ClCompile Include="cMusicManager.cpp" />
+    <ClCompile Include="credits.cpp" />
+    <ClCompile Include="cSettings.cpp" />
+    <ClCompile Include="cTipoDiMazzo.cpp" />
+    <ClCompile Include="EngineApp.cpp" />
+    <ClCompile Include="EnterNameGfx.cpp" />
+    <ClCompile Include="fading.cpp" />
+    <ClCompile Include="lang_gen.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="OptionDeckGfx.cpp" />
+    <ClCompile Include="OptionGameGfx.cpp" />
+    <ClCompile Include="OptionGfx.cpp" />
+    <ClCompile Include="regkey.cpp" />
+    <ClCompile Include="StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\include\win_type_global.h" />
+    <ClInclude Include="..\MySearchAlpha\cAlgABSolver.h" />
+    <ClInclude Include="..\MySearchAlpha\cCardItem.h" />
+    <ClInclude Include="..\MySearchAlpha\cHand.h" />
+    <ClInclude Include="..\MySearchAlpha\cStateAB.h" />
+    <ClInclude Include="..\MySearchAlpha\TrickHistory.h" />
+    <ClInclude Include="..\TreCore\AlgCompareFunct.h" />
+    <ClInclude Include="..\TreCore\AlgPlayerInterface.h" />
+    <ClInclude Include="..\TreCore\AlgSupport.h" />
+    <ClInclude Include="..\TreCore\cAlgDefault.h" />
+    <ClInclude Include="..\TreCore\cAlgNetClientPlayer.h" />
+    <ClInclude Include="..\TreCore\cAlgPlugin.h" />
+    <ClInclude Include="..\TreCore\cAlgPythonPlayer.h" />
+    <ClInclude Include="..\TreCore\CardSpec.h" />
+    <ClInclude Include="..\TreCore\cCoreEngine.h" />
+    <ClInclude Include="..\TreCore\cGiocata.h" />
+    <ClInclude Include="..\TreCore\cMano.h" />
+    <ClInclude Include="..\TreCore\cMatchPoints.h" />
+    <ClInclude Include="..\TreCore\cMazzo.h" />
+    <ClInclude Include="..\TreCore\CoreEnv.h" />
+    <ClInclude Include="..\TreCore\cPartita.h" />
+    <ClInclude Include="..\TreCore\cPlayer.h" />
+    <ClInclude Include="..\TreCore\cPlayersOnTable.h" />
+    <ClInclude Include="..\TreCore\cPlayerStatistic.h" />
+    <ClInclude Include="..\TreCore\cProbality.h" />
+    <ClInclude Include="..\TreCore\ErrorMsg.h" />
+    <ClInclude Include="..\TreCore\fuzzy.h" />
+    <ClInclude Include="..\TreCore\InfoComm.h" />
+    <ClInclude Include="..\TreCore\PythonExport.h" />
+    <ClInclude Include="..\TreCore\save_utility.h" />
+    <ClInclude Include="..\TreCore\TraceService.h" />
+    <ClInclude Include="cCardGfx.h" />
+    <ClInclude Include="cDelayNextAction.h" />
+    <ClInclude Include="cGameMainGfx.h" />
+    <ClInclude Include="cHightScoreMgr.h" />
+    <ClInclude Include="cMenuMgr.h" />
+    <ClInclude Include="cMusicManager.h" />
+    <ClInclude Include="credits.h" />
+    <ClInclude Include="cSettings.h" />
+    <ClInclude Include="cTipoDiMazzo.h" />
+    <ClInclude Include="EngineApp.h" />
+    <ClInclude Include="EnterNameGfx.h" />
+    <ClInclude Include="fading.h" />
+    <ClInclude Include="lang_gen.h" />
+    <ClInclude Include="OptionDeckGfx.h" />
+    <ClInclude Include="OptionGameGfx.h" />
+    <ClInclude Include="OptionGfx.h" />
+    <ClInclude Include="regkey.h" />
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="StdAfx.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="tre.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="tre.ico" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
