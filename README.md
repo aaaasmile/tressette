@@ -1,7 +1,9 @@
 # tressette
 
 Sono partito dal codice su sf.net in svn, poi ho cominciato a compilarlo con VS2015
-e SDL 2.0, però senza andare troppo avanti.
+e SDL 2.0, però senza andare troppo avanti. L'invido, invece, con la versione 2.1.0 
+sono riuscito a portarlo in SDL2. Il progetto https://github.com/aaaasmile/invidocpp
+può essere usato come guida per una eventuale conversione.
 
 # Stato
 Questo progetto è il tentativo di compilare il progetto usando VS2015, però senza successo.
