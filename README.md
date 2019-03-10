@@ -5,6 +5,7 @@ e SDL 2.0, però senza andare troppo avanti.
 L'invido, invece, con la versione 2.1.0 
 sono riuscito a portarlo in SDL2. Il progetto https://github.com/aaaasmile/invidocpp
 può essere usato come guida per completare la conversione di questo progetto tressette in SDL2.
+
 Iniziato con la nuova repository tressettecpp per visual studio 2015. Questa repositoy è per 
 la Gloria o meglio la Gilda.
 
